@@ -39,7 +39,7 @@ esac
 if [ -e /tmp/tailscaled ]; then
     echo "INSTALL: ------------------"
     echo "存在残留, 请卸载并重启后重试"
-    echo "卸载命令: wget -qO- https://ghproxy.net/https://raw.githubusercontent.com/CH3NGYZ/tailscale-openwrt/chinese_mainland/uninstall.sh | sh"
+    echo "卸载命令: wget -qO- https://github.com/24kbrother/tailscale-openwrt/blob/chinese_mainland/uninstall.sh | sh"
     echo "---------------------------"
     exit 1
 fi
@@ -66,7 +66,7 @@ download_success=false
 
 # 代理列表
 proxy_zip_urls="
-https://ghproxy.net/https://raw.githubusercontent.com/CH3NGYZ/tailscale-openwrt/chinese_mainland/tailscale-openwrt.tgz
+https://github.com/24kbrother/tailscale-openwrt/blob/chinese_mainland/tailscale-openwrt.tgz
 https://fastly.jsdelivr.net/gh/CH3NGYZ/tailscale-openwrt@chinese_mainland/tailscale-openwrt.tgz
 https://gcore.jsdelivr.net/gh/CH3NGYZ/tailscale-openwrt@chinese_mainland/tailscale-openwrt.tgz
 https://jsdelivr.b-cdn.net/gh/CH3NGYZ/tailscale-openwrt@chinese_mainland/tailscale-openwrt.tgz
